@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <sys/mman.h>
 #include <stdlib.h>
+#include <sys/mman.h>
 
 #include "testcases.h"
 
@@ -10,8 +10,14 @@ unsigned long nr_signals = 0;
 #define PAGE_SIZE		(4096)
 
 /*
- * 			placeholder-1
- * implement your signal handler and page replacement policy here
+ * 			placeholder-3
+ * implement your page replacement policy here
+ */
+
+
+/*
+ * 			placeholder-2
+ * implement your signal handler here
  */
 
 int main(int argc, char *argv[])
@@ -27,10 +33,11 @@ int main(int argc, char *argv[])
 	}
 	buff = ptr;
 	/*
-	 * 		placeholder-2
-	 * register me with the kernel ballooning driver
+	 * 		placeholder-1
+	 * register me with the kernel ballooning subsystem
 	 */
 
+	/* DO NOT MODIFY BELOW THIS LINE */
 	/* test-case */
 	test_case_main(buff, TOTAL_MEMORY_SIZE);
 

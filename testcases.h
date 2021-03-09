@@ -4,15 +4,17 @@
 /*
  * Test-case 1
  */
-void test_case_1(int *ptr, long len)
+long test_case_1(int *ptr, long len)
 {
-	long i;
-	int tmp;
+	long i, sum = 0;
+	int iter, tmp;
 
-	for (i = 0; i < len/2; i++) {
-		tmp = ptr[i];
-		tmp = tmp + 1;
+	for (iter = 0; iter < 200; iter++) {
+		for (i = 0; i < len/2; i++) {
+			ptr[i] = ptr[i] + 1;
+		}
 	}
+	return sum;
 }
 
 

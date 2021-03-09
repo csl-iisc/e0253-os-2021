@@ -1,6 +1,6 @@
 # Programming assignment for e0253-os-2021
 
-Type "make" to compile.
+Execute "make" to compile.
 
 ## Content
 - main.c : this is where you will write your logic.

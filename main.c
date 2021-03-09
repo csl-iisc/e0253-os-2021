@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <sys/mman.h>
 
 #include "testcases.h"
@@ -32,6 +33,8 @@ int main(int argc, char *argv[])
        		exit(1);
 	}
 	buff = ptr;
+	memset(buff, 0, TOTAL_MEMORY_SIZE);
+
 	/*
 	 * 		placeholder-1
 	 * register me with the kernel ballooning subsystem

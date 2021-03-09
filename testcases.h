@@ -1,3 +1,6 @@
+/* Use 4GB memory */
+#define TOTAL_MEMORY_SIZE	(4UL * 1024 * 1024 * 1024)
+
 /*
  * Test-case 1
  */

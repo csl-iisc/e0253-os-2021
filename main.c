@@ -7,8 +7,6 @@
 void *buff;
 
 #define PAGE_SIZE		(4096)
-/* Use 4GB memory */
-#define TOTAL_MEMORY_SIZE	(4UL * 1024 * 1024 * 1024)
 
 /*
  * Placeholder for signal handler and policy implementation.

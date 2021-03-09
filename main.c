@@ -9,7 +9,8 @@ void *buff;
 #define PAGE_SIZE		(4096)
 
 /*
- * Placeholder for signal handler and policy implementation.
+ * 			placeholder-1
+ * implement your signal handler and page replacement policy here
  */
 
 int main(int argc, char *argv[])
@@ -24,7 +25,8 @@ int main(int argc, char *argv[])
        		exit(1);
 	}
 	/*
-	 * Placeholder for registering with the kernel ballooning driver.
+	 * 		placeholder-2
+	 * register me with the kernel ballooning driver
 	 */
 
 	/* test-case */

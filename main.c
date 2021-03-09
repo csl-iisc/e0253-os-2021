@@ -5,6 +5,7 @@
 #include "testcases.h"
 
 void *buff;
+unsigned long nr_signals = 0;
 
 #define PAGE_SIZE		(4096)
 
@@ -34,5 +35,5 @@ int main(int argc, char *argv[])
 	test_case_main(buff, TOTAL_MEMORY_SIZE);
 
 	munmap(ptr, TOTAL_MEMORY_SIZE);
-
+	printf("I received SIGBALLOON %lu times\n", nr_signals);
 }

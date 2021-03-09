@@ -24,6 +24,7 @@ int main(int argc, char *argv[])
 		printf("mmap failed\n");
        		exit(1);
 	}
+	buff = ptr;
 	/*
 	 * 		placeholder-2
 	 * register me with the kernel ballooning driver

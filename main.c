@@ -40,7 +40,6 @@ int main(int argc, char *argv[])
 	 * register me with the kernel ballooning subsystem
 	 */
 
-	/* DO NOT MODIFY BELOW THIS LINE */
 	/* test-case */
 	test_case_main(buff, TOTAL_MEMORY_SIZE);
 
